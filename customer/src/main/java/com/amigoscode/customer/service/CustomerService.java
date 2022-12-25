@@ -18,8 +18,11 @@ public class CustomerService {
                 .lastName(customerDto.lastName())
                 .email(customerDto.email())
                 .build();
-
+        // todo: check if email valid
+        // todo: check if email not taken
+        // todo: check if fraudster
         customerRepository.save(customer);
+        // todo: send notification
 
     }
 
