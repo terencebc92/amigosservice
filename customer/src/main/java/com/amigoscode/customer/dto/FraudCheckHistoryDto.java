@@ -1,10 +1,9 @@
 package com.amigoscode.customer.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
-@Data
-@AllArgsConstructor
-public class FraudCheckHistoryDto {
-    private boolean isFraudster;
+public record FraudCheckHistoryDto(Boolean isFraudster){
 }
