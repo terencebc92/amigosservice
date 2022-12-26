@@ -19,11 +19,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>19</maven.compiler.source>
-    <maven.compiler.target>19</maven.compiler.target>
-    <spring.boot.maven.plugin.version>3.0.0</spring.boot.maven.plugin.version>
-    <spring.boot.dependencies.version>3.0.0</spring.boot.dependencies.version>
-    <spring.cloud-version>2022.0.0</spring.cloud-version>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
+    <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
+    <spring.cloud-version>2020.0.3</spring.cloud-version>
   </properties>
 
 <!-- This section defines dependecies that submodules can optionally import-->
@@ -56,6 +56,10 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <groupId>org.springframework.cloud</groupId>
     </dependency>
   </dependencies>
 
